@@ -5,10 +5,10 @@
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd client && yarn && yarn run build",
-    "client": "cd client && yarn start",
+    "heroku-postbuild": "cd client && yarn && npm run build",
+    "client": "cd client && npm start",
     "server": "nodemon index.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "dev": "concurrently --kill-others-on-fail \"npm server\" \"npm client\""
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
@@ -22,7 +22,8 @@
     "nodemailer": "4.6.8",
     "passport": "0.4.0",
     "passport-jwt": "4.0.0",
-    "passport-local": "1.0.0"
+    "passport-local": "1.0.0",
+    "react-chartjs-2": "^2.7.6"
   },
   "devDependencies": {
     "concurrently": "4.0.1",
