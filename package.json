@@ -13,6 +13,7 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "1.18.3",
+    "chart.js": "^2.8.0",
     "compression": "1.7.3",
     "dotenv": "6.1.0",
     "express": "4.16.3",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "concurrently": "4.0.1",
-    "nodemon": "1.18.4"
+    "nodemon": "1.18.4",
+    "webpack-dev-server": ">=3.1.11"
   }
 }
